@@ -1,8 +1,11 @@
 # Occupancy prediction models
 
+> **Dataset availability:** The related datasets are not publicly available yet. We are currently planning a separate dataset release. Once the datasets are published, this repository will be updated with the corresponding data access information.
+
 This folder contains a cleaned, GitHub-ready version of the occupancy prediction code.
 
 The public code starts from an already prepared 81-column `pandas.DataFrame`. The DataFrame must use two-level columns in the format `(room_name, sensor_name)`. Database access, raw-data export, missing-value handling, and normalization are intentionally excluded.
+
 
 ## Files
 
