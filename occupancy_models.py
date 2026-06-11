@@ -734,7 +734,7 @@ class GATTemporalLSTMPredictor(nn.Module):
             dropout=dropout,
         )
         self.head = nn.Sequential(
-            nn.Linear(2 * lstm_hidden, 128),
+            nn.Linear(lstm_hidden, 128),
             nn.ReLU(),
             nn.Dropout(dropout),
             nn.Linear(128, output_dim),
