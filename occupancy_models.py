@@ -731,7 +731,6 @@ class GATTemporalLSTMPredictor(nn.Module):
             hidden_size=lstm_hidden,
             num_layers=2,
             batch_first=True,
-            bidirectional=True,
             dropout=dropout,
         )
         self.head = nn.Sequential(
